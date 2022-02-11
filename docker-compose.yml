@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  cards:
+    build: .
+    entrypoint: ./cards.sh
+    env_file:
+      - .env
+    volumes:
+      - .:/workspace:cached
+    working_dir: /workspace
+  genwords:
+    build: .
+    entrypoint: ./genwords.sh
+    env_file:
+      - .env
+    volumes:
+      - .:/workspace:cached
+    working_dir: /workspace
+  trans:
+    build: .
+    entrypoint: ./trans.sh
+    env_file:
+      - .env
+    volumes:
+      - .:/workspace:cached
+    working_dir: /workspace
