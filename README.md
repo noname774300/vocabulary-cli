@@ -2,11 +2,11 @@
 
 ## 概要
 
-Windows のコマンドプロンプトで使用できる英日単語帳です。
+コマンドラインで使える単語帳です。
 
 ## 使用方法
 
-1. [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows) をインストールします。
+1. [Docker Compose](https://docs.docker.com/compose/install/) をインストールします。
 2. このリポジトリをダウンロードします（`git clone` など）。
 3. コマンドプロンプトを起動後、リポジトリのディレクトリ内に移動して、以後の手順に従います。
 
@@ -45,7 +45,7 @@ docker-compose run --rm trans -d -j en:ja word
 
 ## ショートカット
 
-bin ディレクトリのパスを環境変数 Path に登録することにより、短いタイプ数で単語帳の使用や翻訳ができるようになります。
+bin ディレクトリのパスを環境変数 PATH に登録することにより、短いタイプ数で単語帳の使用や翻訳ができるようになります。
 
 ```sh
 # 単語帳
@@ -62,4 +62,5 @@ ja This is an English sentence.
 trans -d -j en:ja word
 ```
 
-※内部で [translate-shell](https://packages.ubuntu.com/focal/translate-shell) を使用しています。
+※内部で [translate-shell](https://packages.ubuntu.com/focal/translate-shell) を使用しています。  
+英語、日本語以外の言語を使用したいときは translate-shell のドキュメントを参照してください。

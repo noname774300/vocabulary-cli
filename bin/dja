@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker-compose -f ..\docker-compose.yml run --rm trans -d -j ja:en ${@}
