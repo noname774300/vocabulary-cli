@@ -3,7 +3,7 @@
 dirpath="./cards"
 mkdir -p ${dirpath}
 
-for word in $(cat ${@}); do
+cat ${@} | while read word; do
 echo $word
 sleep 3
 filename="$(echo ${word} | awk '{ gsub(/[^A-Za-z0-9]/, "_"); print }').txt"
