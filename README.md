@@ -17,7 +17,7 @@
 docker-compose run --rm genwords
 ```
 
-※作成される単語のリストは [wamerican](https://packages.ubuntu.com/focal/wamerican) に含まれるファイルのコピーです。
+※作成される単語のリストは [wamerican](https://packages.ubuntu.com/focal/wamerican) に含まれるファイルのコピーです。 words.txt is extracted from the package wamerican.
 
 ## 単語帳を使用 Use flashcards
 
