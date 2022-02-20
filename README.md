@@ -1,8 +1,8 @@
-# flashcards-cli
+# vocabulary-cli
 
 ## 概要 About
 
-コマンドラインで使える単語帳です。 An flashcards app on command line.
+コマンドラインで使える単語帳です。 Command Line Vocabulary.
 
 ## 使用方法 How to use
 
@@ -19,10 +19,9 @@ docker-compose run --rm genwords
 
 ※作成される単語のリストは [wamerican](https://packages.ubuntu.com/focal/wamerican) に含まれるファイルのコピーです。 words.txt is extracted from the package wamerican.
 
-## 単語帳を使用 Use flashcards
+## 単語帳を使用 Use vocabulary
 
 ```sh
-# Use flashcards.
 docker-compose run --rm cards words.txt
 ```
 
@@ -37,7 +36,7 @@ docker-compose run --rm trans -d -j en:ja word
 
 ## 単語・翻訳・辞書の保存 About saved files
 
-単語帳で表示された単語の意味は cards ディレクトリに、翻訳結果や表示された辞書は logs ディレクトリにテキストファイルとして保存されています。 There're translated files for using flashcards in ./cards directory, for translating and the dictionary in ./logs directory.  
+単語帳で表示された単語の意味は cards ディレクトリに、翻訳結果や表示された辞書は logs ディレクトリにテキストファイルとして保存されています。 There're translated files for using vocabulary in ./cards directory, for translating and the dictionary in ./logs directory.  
 ※ただしアルファベット以外の文字を含む単語や文章など（日本語など）は保存されない場合があります。 Files includes multibyte characters are might not saved.
 
 `less -R` コマンドでファイルを読めます。 To read these, run `less -R`.
@@ -49,7 +48,7 @@ docker-compose run --rm trans -d -j en:ja word
 bin ディレクトリのパスを環境変数 PATH に登録することにより、短いタイプ数で単語帳の使用や翻訳ができるようになります。 Shortcuts are available with appending ./bin directory to Path.
 
 ```sh
-# 単語帳 Flashcards
+# 単語帳 Vocabulary
 cards words.txt
 # 英日辞書を表示 English Japanese dictionary
 den word
