@@ -4,7 +4,7 @@
 
 コマンドラインで使える単語帳です。 Command Line Vocabulary.
 
-## 使用方法 How to use
+## 使用方法 Usage
 
 1. [Docker Compose](https://docs.docker.com/compose/install/) をインストールします。 Install Docker Compose.
 2. このリポジトリをダウンロードします（`git clone` など）。 Download this repo (by using `git clone` etc).
